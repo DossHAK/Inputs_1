@@ -1,0 +1,235 @@
+body {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.fuck {
+    padding: 25px;
+}
+
+.enter {
+    width: 150px;
+    height: 25px;
+    border: 1px #818181 solid;
+    border-radius: 3px;
+    padding: 5px 0 5px 10px;
+
+}
+
+.valid {
+    width: 150px;
+    height: 25px;
+    border: 1px #3faf47 solid;
+    border-radius: 3px;
+    padding: 5px 0 5px 10px;
+    background: url(../img/valid.png) no-repeat center right 5px;
+    background-size: 17px auto;
+}
+
+.invalid {
+    width: 150px;
+    height: 25px;
+    border: 1px #e53e61 solid;
+    border-radius: 3px;
+    padding: 5px 0 5px 10px;
+    background: url(../img/invalid.png) no-repeat center right 5px;
+    background-size: 17px auto;
+}
+
+.checkbox-green {
+	display: inline-block;    
+	height: 28px;    
+	line-height: 28px;  
+	margin-right: 10px;      
+	position: relative;
+	vertical-align: middle;
+	font-size: 14px;
+	user-select: none;	
+}
+.checkbox-green .checkbox-green-switch {
+	display: inline-block;	
+	height: 28px;
+	width: 90px;
+	box-sizing: border-box;
+	position: relative;	
+	border-radius: 2px;
+	background: #848484;
+	transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+}
+.checkbox-green .checkbox-green-switch:before {
+	content: attr(data-label-on);
+	display: inline-block;
+	box-sizing: border-box;		
+	width: 45px;	
+	padding: 0 12px;	
+	position: absolute;
+	top: 0;
+	left: 45px;	
+	text-transform: uppercase;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 10px;
+	line-height: 28px;
+}
+.checkbox-green .checkbox-green-switch:after {
+	content: attr(data-label-off);
+	display: inline-block;
+	box-sizing: border-box;	
+	width: 44px;	
+	border-radius: 1px;	
+	position: absolute;
+	top: 1px;
+	left: 1px;	
+	z-index: 5;
+	text-transform: uppercase;
+	text-align: center;
+	background: white;
+	line-height: 26px;
+	font-size: 10px;
+	color: #777;	
+	transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+}
+.checkbox-green input[type="checkbox"] {
+	display: block;	
+	width: 0;
+	height: 0;	
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.checkbox-green input[type="checkbox"]:checked + .checkbox-green-switch {
+	background-color: #70c767;
+}
+.checkbox-green input[type="checkbox"]:checked + .checkbox-green-switch:before {
+	content: attr(data-label-off);
+	left: 0;
+}
+.checkbox-green input[type="checkbox"]:checked + .checkbox-green-switch:after {
+	content: attr(data-label-on);
+	color: #4fb743;
+	transform: translate3d(44px, 0, 0);
+}
+ 
+.checkbox-green input[type="checkbox"] + .checkbox-green-switch:hover {
+	cursor: pointer;
+}
+.checkbox-green input[type="checkbox"] + .checkbox-green-switch:hover:after {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+ 
+.checkbox-green.focused .checkbox-green-switch:after {
+	box-shadow: inset 0px 0px 4px #ff5623;
+}
+
+.check__boxes form {
+    display: flex;
+}
+
+.radio form {
+    display: flex;
+}
+
+.radio input[type=radio]:before {
+    content: '';
+    background: #fff;
+    border-radius: 100%;
+    border: 1px solid #3faf47;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: -0.1em;
+    margin-right: 1em; 
+    vertical-align: top;
+    cursor: pointer;
+    text-align: center;
+    transition: all 250ms ease;
+}
+
+.buttons button {
+    margin: 3px;
+    cursor: pointer;
+}
+
+.buttons button:active {
+    border: 3px solid #000;
+}
+
+.buttons .disabled {
+    cursor: not-allowed;
+}
+
+.buttons .disabled:active {
+    border: none;
+}
+
+.active {
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: #3faf47;
+    border: none;
+    border-radius: 4px;
+}
+
+.hover__green {
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: #28782d; 
+    border: none;
+    border-radius: 4px;
+}
+
+.danger {
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: #e53e61;
+    border: none;
+    border-radius: 4px;
+}
+
+.hover__red {
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: #98243d;
+    border: none;
+    border-radius: 4px;
+}
+
+.disabled {
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: #818181;
+    border: none;
+    border-radius: 4px;
+}
+
+.plus {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color: #3faf47;
+    border: none;
+    border-radius: 50%;
+}
+
+.min {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color: #e53e61;
+    border: none;
+    border-radius: 50%;
+}
+
+textarea {
+    width: 420px;
+    height: 100px;
+}
+
+
+
